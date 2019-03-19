@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">msn</string>
     <string name="action_settings">Settings</string>
+    <string name="hello_wordl">Hello World!</string>
+    <string name="main_lbl_title">Please insert your data</string>
+    <string name="main_txt_name">Name</string>
+    <string name="main_btn_accept">Accept</string>
 </resources>
