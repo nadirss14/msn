@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     public void setName(View view) {
         EditText txt_name= findViewById(R.id.main_txt_name);
         String _name= txt_name.getText().toString();
-        Toast t= Toast.makeText(getApplicationContext(),_name,Toast.LENGTH_SHORT);
+        Toast t= Toast.makeText(getApplicationContext(),_name,Toast.LENGTH_SHORT) ;
         t.setGravity(Gravity.CENTER,0,0);
         t.show();
     }
