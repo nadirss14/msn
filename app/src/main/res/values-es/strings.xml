@@ -6,4 +6,13 @@
     <string name="main_txt_name">Nombre</string>
     <string name="main_btn_accept">Aceptar</string>
     <string name="login_user_name">Nombre de Usuario</string>
+    <string name="login_btn_login">Login</string>
+    <string name="login_dont_have_account">¿No tienes una cuenta?,</string>
+    <string name="login_create_account_here">Crea una aqui!</string>
+    <string name="login_user_password">Contraseña</string>
+    <string name="create_account_email">Email</string>
+    <string name="login_user_confirm_password">Confirmar contraseña</string>
+    <string name="create_account_btn_join_on">Unete!</string>
+    <string name="login_user_login">Usuario</string>
+    <string name="my_toolbar_title_create_account">Crear Cuenta</string>
 </resources>
