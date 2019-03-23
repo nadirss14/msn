@@ -1,0 +1,13 @@
+<android.support.design.widget.BottomNavigationView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/colorprimaryLight"
+    app:menu="@menu/menu_container"
+    >
+
+</android.support.design.widget.BottomNavigationView>

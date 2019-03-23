@@ -15,4 +15,13 @@
     <string name="create_account_btn_join_on">Join on!</string>
     <string name="login_user_login">User login</string>
     <string name="my_toolbar_title_create_account">Create Account</string>
+    <string name="txt_time_card">4 dias</string>
+    <string name="txt_num_like">10 likes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_option_home">Home</string>
+    <string name="menu_option_profile">Profile</string>
+    <string name="menu_option_search">Search</string>
+
 </resources>

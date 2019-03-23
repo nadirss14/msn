@@ -6,4 +6,8 @@
     <dimen name="txtsize_16dp">16dp</dimen>
     <dimen name="margin_10dp">10dp</dimen>
     <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="card_height_200dp">200dp</dimen>
+    <dimen name="corner_radius_4dp">4dp</dimen>
+    <dimen name="txtsize_25sp">25sp</dimen>
+    <dimen name="txtsize_15sp">15sp</dimen>
 </resources>

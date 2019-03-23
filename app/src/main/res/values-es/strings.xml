@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MSN</string>
     <string name="action_settings">Settings</string>
@@ -15,4 +16,9 @@
     <string name="create_account_btn_join_on">Unete!</string>
     <string name="login_user_login">Usuario</string>
     <string name="my_toolbar_title_create_account">Crear Cuenta</string>
+    <string name="txt_time_card">4 dias</string>
+    <string name="menu_option_home">Home</string>
+    <string name="menu_option_profile">Profile</string>
+    <string name="menu_option_search">Search</string>
+
 </resources>
