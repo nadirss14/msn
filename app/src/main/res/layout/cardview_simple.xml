@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/card_height_200dp"
     cardview:cardCornerRadius="@dimen/corner_radius_4dp"
+    android:layout_marginBottom="@dimen/margin_5dp"
     >
     <android.support.v7.widget.ContentFrameLayout
         android:layout_width="match_parent"
@@ -14,7 +15,7 @@
             android:id="@+id/img_card"
             android:layout_width="match_parent"
             android:layout_height="@dimen/card_height_200dp"
-            android:background="@drawable/image"
+            android:background="@drawable/beach_nadir"
             android:scaleType="centerCrop"
             />
         <LinearLayout

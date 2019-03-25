@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.nadirss14.msn.views.ContainerActivity;
 import com.nadirss14.msn.views.CreateAccountActivity;
 
 public class LoginActivity extends AppCompatActivity {
@@ -17,6 +18,11 @@ public class LoginActivity extends AppCompatActivity {
 
     public  void goCreateAccount(View view ){
         Intent intent=new Intent(LoginActivity.this, CreateAccountActivity.class);
+        startActivity(intent);
+    }
+
+    public void login(View view){
+        Intent intent= new Intent(LoginActivity.this, ContainerActivity.class);
         startActivity(intent);
     }
 }

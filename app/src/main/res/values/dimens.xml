@@ -10,4 +10,5 @@
     <dimen name="corner_radius_4dp">4dp</dimen>
     <dimen name="txtsize_25sp">25sp</dimen>
     <dimen name="txtsize_15sp">15sp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
 </resources>

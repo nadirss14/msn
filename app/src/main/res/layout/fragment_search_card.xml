@@ -5,10 +5,25 @@
     android:layout_height="match_parent"
     tools:context=".views.fragments.SearchCardFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_search"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/ic_search"/>
+
+        <EditText
+            android:id="@+id/txt_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/menu_option_search"
+            android:paddingLeft="@dimen/margin_5dp"/>
+
+    </LinearLayout>
 
 </FrameLayout>

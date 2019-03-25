@@ -27,6 +27,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LoginActivity" />
         </activity>
+        <user-permission android:name="android.permission.INTERNET" />
     </application>
 
 </manifest>
