@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <android.support.design.button.MaterialButton
+        <Button
             android:id="@+id/btn_search"
             android:layout_width="60dp"
             android:layout_height="60dp"

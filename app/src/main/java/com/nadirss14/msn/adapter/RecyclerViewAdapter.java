@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.nadirss14.msn.R;
 import com.nadirss14.msn.model.SimpleCard;
+import com.squareup.picasso.Picasso;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -50,7 +51,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         _myViewHolder._first_word.setText(simpleCard.getFirst_word());
         _myViewHolder._num_like.setText(simpleCard.getNum_like());
         _myViewHolder._time_img.setText(simpleCard.getTime_img());
-      // _myViewHolder._img_card.setImageURI (new );
+        Picasso.get().load(simpleCard.getImg_card()).into(_myViewHolder._img_card);
+
 
     }
 

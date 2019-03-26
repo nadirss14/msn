@@ -22,5 +22,7 @@
     <string name="menu_option_home">Home</string>
     <string name="menu_option_profile">Profile</string>
     <string name="menu_option_search">Search</string>
+    <string name="txt_title_image">\"Party in the beach\"</string>
+    <string name="txt_content_image">\"Si quieres construir un barco, no empieces por buscar madera, cortar tablas o distribuir el trabajo. Evoca primero en los hombres y mujeres el anhelo del mar libre y ancho\". <bold>Antoine de Saint-Exupéry.</bold></string>
 
 </resources>
