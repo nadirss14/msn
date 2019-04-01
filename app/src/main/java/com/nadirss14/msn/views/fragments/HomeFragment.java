@@ -34,6 +34,7 @@ public class HomeFragment extends Fragment {
 
         View view=inflater.inflate(R.layout.fragment_home, container, false);
         showToolbar(getResources().getString(R.string.menu_option_home),false,view);
+
         RecyclerView recyclerView= (RecyclerView) view.findViewById(R.id.recycler_card);
 
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getContext());

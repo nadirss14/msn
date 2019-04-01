@@ -34,6 +34,7 @@ public class ProfileFragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_profile, container, false);
         showToolbar("",false,view);
+
         RecyclerView recyclerView= (RecyclerView) view.findViewById(R.id.profile_recycler_card);
 
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getContext());
@@ -46,6 +47,7 @@ public class ProfileFragment extends Fragment {
 
         return view;
     }
+
     public ArrayList<SimpleCard> buildPicture(){
         ArrayList<SimpleCard> _simpleCard=new ArrayList<>();
         _simpleCard.add(new SimpleCard("https://i.ytimg.com/vi/hW9PUzl7j9w/maxresdefault.jpg","Paisaje 1","","1 dia","10"));

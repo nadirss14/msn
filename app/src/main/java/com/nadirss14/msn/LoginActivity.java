@@ -1,6 +1,7 @@
 package com.nadirss14.msn;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,5 +25,12 @@ public class LoginActivity extends AppCompatActivity {
     public void login(View view){
         Intent intent= new Intent(LoginActivity.this, ContainerActivity.class);
         startActivity(intent);
+    }
+
+    public void goToHomePage(View view) {
+
+        Intent intent= new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.nadirss14.com"));
+        startActivity(intent);
+
     }
 }

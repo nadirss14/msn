@@ -4,26 +4,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".views.fragments.SearchCardFragment">
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingLeft="@dimen/margin_10dp"
+        android:paddingRight="@dimen/margin_10dp"
+        android:paddingTop="@dimen/margin_5dp">
 
-        <Button
-            android:id="@+id/btn_search"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:background="@drawable/ic_search"/>
-
-        <EditText
-            android:id="@+id/txt_search"
+        <android.support.v7.widget.SearchView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="@string/menu_option_search"
-            android:paddingLeft="@dimen/margin_5dp"/>
+            android:layout_height="wrap_content"
+            app:queryHint="@string/menu_option_search">
+
+        </android.support.v7.widget.SearchView>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_recycler_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+
+        </android.support.v7.widget.RecyclerView>
 
     </LinearLayout>
 
