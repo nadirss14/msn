@@ -93,7 +93,7 @@
                         android:text="@string/login_dont_have_account"
                         android:textColor="@android:color/white"
                         android:textStyle="bold"
-                        android:textSize="@dimen/txtsize_16dp"
+                        android:textSize="@dimen/txtsize_16sp"
                         />
                     <TextView
                         android:id="@+id/create_account_here"
@@ -102,7 +102,7 @@
                         android:text="@string/login_create_account_here"
                         android:textColor="@android:color/white"
                         android:textStyle="bold"
-                        android:textSize="@dimen/txtsize_16dp"
+                        android:textSize="@dimen/txtsize_16sp"
                         android:layout_toRightOf="@id/dont_have_account"
                         android:onClick="goCreateAccount"
                         />

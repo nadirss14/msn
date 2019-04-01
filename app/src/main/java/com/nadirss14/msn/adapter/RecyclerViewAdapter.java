@@ -1,10 +1,14 @@
 package com.nadirss14.msn.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.Build;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.widget.RecyclerView;
+import android.transition.Explode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +18,7 @@ import android.widget.TextView;
 
 import com.nadirss14.msn.R;
 import com.nadirss14.msn.model.SimpleCard;
+import com.nadirss14.msn.views.ImageDetailActivity;
 import com.squareup.picasso.Picasso;
 
 import java.net.URL;
@@ -25,7 +30,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private int _resource;
     private Activity _activity;
 
-    public RecyclerViewAdapter(ArrayList<SimpleCard> _simpleCard, int _resource, Activity _activity) {
+        public RecyclerViewAdapter(ArrayList<SimpleCard> _simpleCard, int _resource, Activity _activity) {
         this._simpleCard = _simpleCard;
         this._resource = _resource;
         this._activity = _activity;
@@ -53,6 +58,28 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         _myViewHolder._time_img.setText(simpleCard.getTime_img());
         Picasso.get().load(simpleCard.getImg_card()).into(_myViewHolder._img_card);
 
+        _myViewHolder._img_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(_activity, ImageDetailActivity.class);
+
+                if (Build.VERSION.SDK_INT>= Build.VERSION_CODES.LOLLIPOP){
+                    Explode explode=new Explode();
+                    explode.setDuration(1000);
+                    _activity.getWindow().setExitTransition(explode);
+                    _activity.startActivity(intent,
+                            ActivityOptionsCompat.makeSceneTransitionAnimation(
+                                    _activity,
+                                    v,
+                                    _activity.getString(R.string.transition_name)).toBundle());
+
+                }else {
+                    _activity.startActivity(intent);
+                }
+
+
+            }
+        });
 
     }
 
